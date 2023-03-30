@@ -4,13 +4,13 @@ from typing import List
 class Solution:
     def minimumInteger(self, N : int, A : List[int]) -> int:
         # code here
-        A.sort()
+        ans=9876896989289698126
         s=0
         for i in A: s+=i
         for i in range(N):
             if A[i]*N>=s:
-                return A[i]
-    
+                ans=min(ans,A[i])
+        return ans
         
         
         
